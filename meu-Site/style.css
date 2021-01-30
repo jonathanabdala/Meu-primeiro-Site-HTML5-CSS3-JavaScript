@@ -1,0 +1,220 @@
+/* Style do Site */
+body{
+    margin:0; /* Limpar a formatação do navegador */
+    border:0; /* Limpar a formatação do navegador */
+    padding: 0; /* Limpar a formatação do navegador */
+    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(1.75em, 1em+3vw,2.5em);
+    color:#232323;
+    background-image: url(img/Bg_loja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-rendering: optimizeLegibility;
+    -webtik-font-smoothing: antialiased;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width:100vw;
+}
+.banner{
+ 
+ height: 100vh;
+}
+.img-banner{
+    width:100vw;
+    height: 100vh;
+}
+.menu{
+    padding:10px;
+    font-size:clamp(1.75em, 1em+3vw,2.5em);
+    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #80000035;
+    color:#ffffff;
+}
+.menu > a:hover{
+    background-color: #800000;
+    color:#ffd700;
+    transition: 0,5s;
+}
+.corpo{
+    padding:35px 75px;
+    min-height: 500px;
+    text-align: justify;
+    background-color: #ffffff;
+}
+
+.rodape{
+    text-align: center;
+    color:#ffffff;
+    font-size: 0.9em;
+    background-color: #800000;
+    padding: 25px 0 50px 0;
+}
+/*============ rodape > div > p > a ============== */
+.rodape a {
+    color:#ffffff;
+    text-decoration:none;
+}
+.rodape a:hover{
+    color:#ffd700;
+}
+.rodape-links{
+    width:20%;
+    display: inline-block;
+    vertical-align: top;
+}
+.rodape-conteudo{
+    width:45%;
+    display:inline-block;
+    text-align: justify;
+    vertical-align: top;
+}
+.rodape-redes-sociais{
+    width:24%;
+    display:inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+/* sOBRE */
+.box{
+    width:100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color:#ffffff;
+    background-color: #999999;
+    margin:15px;
+    transition: 0.5s;
+    font-size:clamp(1.75em, 1em+3vw,2.5em);
+    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
+}
+.box1{
+    background-color: #800000;
+}
+.box1:hover{
+    background-color: #ff0000;
+    color:#232323;
+    border-radius: 70%;
+    transition:1.2s;
+}
+.box2{
+    background-color: #800000;
+}
+.box2:hover{
+    background-color: #ff0000;
+    color:#232323;
+    font-weight: bold;
+    width:300px;
+    transition:1s;
+}
+.box3{
+    background-color: #800000;
+}
+.box3:hover{
+    transform: rotate(360deg);
+    transition:1s;
+}
+.box4{
+    background-color: #800000;
+}
+.box4:hover{
+    background-color: #ff0000;
+    color:#232323;
+    font-weight: bold;
+    font-size: 1.5em;
+    width:300px;
+    transition:1s;
+}
+.conteudo-feminino{
+    text-align:justify;
+    margin:15px;
+    font-size:clamp(1.75em, 1em+3vw,2.5em);
+    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
+}
+/* ========================Formulário de Contato ========================*/
+.contato{
+    width: 60%;
+    margin:auto;
+    padding:15px 35px;
+    margin-bottom: 50px;
+    background-color: #fafafa;
+    min-height: 300px;
+}
+
+/* ==============INPUT============= */
+.form-group > select{
+    height: 35px;
+}
+
+/* ==============Botões btn =============== */
+.btn{
+    color:#232323;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn:hover{
+    cursor: pointer;
+    filter:brightness(70%);
+    transition:0.5s;
+}
+.btn-danger{
+    background-color: #800000;
+    color:#ffffff;
+}
+
+/* ==============Layout Produtos================== */
+.produto{
+    height: 120px;
+    width:47%;
+    margin: auto;
+    border:solid 1px #ffa500;
+    padding: 10px;
+    margin-bottom: 10px;
+    color:#800000;
+    display:inline-block;
+}
+.produto-foto{
+    width:25%;
+    height: 100%;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+}
+.produto-descricao{
+    margin-bottom: 2px;
+    overflow: hidden;
+    height: 50%;
+    font-size:clamp(1.75em, 1em+3vw,2.5em);
+    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
+    color:#800000;
+}
+.produto-valor{
+    font-size: 2em;
+    font-weight: bold;
+    color:#800000;
+    display:inline;
+}
+.produto-ajuste-btn-compra{
+    float:right;
+}
+/* ============Medium Queries================= */
+
+/* Extra Small  (XS) Smartphone portrait-retrato */
+@media(min-width: 400px){
+    .contato{
+        width:100%;
+        background-color: #4169e1;
+    }
+}
+.porduto{
+
+}
+
+
+/* Small(SM) Smartphone => Landscape-Paisagem */
+@media(min-width)
