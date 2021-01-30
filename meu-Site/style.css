@@ -1,220 +1,434 @@
-/* Style do Site */
-body{
-    margin:0; /* Limpar a formatação do navegador */
-    border:0; /* Limpar a formatação do navegador */
-    padding: 0; /* Limpar a formatação do navegador */
-    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
-    font-size: clamp(1.75em, 1em+3vw,2.5em);
-    color:#232323;
-    background-image: url(img/Bg_loja.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-rendering: optimizeLegibility;
-    -webtik-font-smoothing: antialiased;
+/* =====Estilo do Site - HTML e CSS (básico)=======*/
+
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    background-color: #ffffff;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h3 {
+    color: #000000;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.container {
     width: 100vw;
-    height: 100vh;
+    margin: auto;
 }
-.container{
-    width:100vw;
-}
-.banner{
- 
- height: 100vh;
-}
-.img-banner{
-    width:100vw;
-    height: 100vh;
-}
-.menu{
-    padding:10px;
-    font-size:clamp(1.75em, 1em+3vw,2.5em);
-    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
+
+.banner {
+    height: 209px;
+    width: auto;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
-    background-color: #80000035;
-    color:#ffffff;
+    line-height: 100px;
 }
-.menu > a:hover{
-    background-color: #800000;
-    color:#ffd700;
-    transition: 0,5s;
+
+.img-banner {
+    width: 100vw;
+    height: 37vh;
+    line-height: 300vh;
 }
-.corpo{
-    padding:35px 75px;
-    min-height: 500px;
+
+.menu {
+    padding: 8px;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #9a32cd;
+    color: #ffffff;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+}
+
+.menu>a:hover {
+    background-color: #ffffff;
+    color: #ffa500;
+    transition: 0.5s;
+}
+
+span {
+    color: #9a32cd;
+}
+
+.corpo {
+    position: relative;
+    padding: 35px 75px;
+    min-height: 600px;
+    /*comando altura minima*/
     text-align: justify;
     background-color: #ffffff;
 }
 
-.rodape{
+.rodape {
     text-align: center;
-    color:#ffffff;
-    font-size: 0.9em;
-    background-color: #800000;
-    padding: 25px 0 50px 0;
+    color: #ffffff;
+    font-size: 0.8em;
+    background-color: #9a32cd;
+    padding: 35px 0 70px 0;
 }
-/*============ rodape > div > p > a ============== */
+
+
+/* =====rodape > div > p > a=========== */
+
 .rodape a {
-    color:#ffffff;
-    text-decoration:none;
+    color: #ffffff;
+    text-decoration: none;
 }
-.rodape a:hover{
-    color:#ffd700;
+
+.rodape a:hover {
+    color: #ffa500;
 }
-.rodape-links{
-    width:20%;
+
+.rodape-links {
+    width: 20%;
     display: inline-block;
     vertical-align: top;
 }
-.rodape-conteudo{
-    width:45%;
-    display:inline-block;
+
+.rodape-conteudo {
+    width: 45%;
+    display: inline-block;
     text-align: justify;
     vertical-align: top;
 }
-.rodape-redes-sociais{
-    width:24%;
-    display:inline-block;
+
+.rodape-redes-sociais {
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.icone-rede-social {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
     vertical-align: middle;
     padding: 0 10px;
 }
-/* sOBRE */
-.box{
-    width:100px;
+
+
+/* =======SOBRE /transções em CSS==========*/
+
+.box {
+    width: 100px;
     height: 100px;
     text-align: center;
     line-height: 100px;
-    color:#ffffff;
-    background-color: #999999;
-    margin:15px;
+    color: #ffffff;
+    margin: 15px;
     transition: 0.5s;
-    font-size:clamp(1.75em, 1em+3vw,2.5em);
-    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
-}
-.box1{
-    background-color: #800000;
-}
-.box1:hover{
-    background-color: #ff0000;
-    color:#232323;
-    border-radius: 70%;
-    transition:1.2s;
-}
-.box2{
-    background-color: #800000;
-}
-.box2:hover{
-    background-color: #ff0000;
-    color:#232323;
-    font-weight: bold;
-    width:300px;
-    transition:1s;
-}
-.box3{
-    background-color: #800000;
-}
-.box3:hover{
-    transform: rotate(360deg);
-    transition:1s;
-}
-.box4{
-    background-color: #800000;
-}
-.box4:hover{
-    background-color: #ff0000;
-    color:#232323;
-    font-weight: bold;
-    font-size: 1.5em;
-    width:300px;
-    transition:1s;
-}
-.conteudo-feminino{
-    text-align:justify;
-    margin:15px;
-    font-size:clamp(1.75em, 1em+3vw,2.5em);
-    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
-}
-/* ========================Formulário de Contato ========================*/
-.contato{
-    width: 60%;
-    margin:auto;
-    padding:15px 35px;
-    margin-bottom: 50px;
-    background-color: #fafafa;
-    min-height: 300px;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
 }
 
-/* ==============INPUT============= */
-.form-group > select{
+.box1 {
+    background-color: #9a32cd;
+}
+
+.box1:hover {
+    background-color: #9a32cd;
+    color: #ffa500;
+    border-radius: 70%;
+    transition: 1.2s;
+}
+
+.box2 {
+    background-color: #9a32cd;
+}
+
+.box2:hover {
+    background-color: #9a32cd;
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 300px;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.box3 {
+    background-color: #9a32cd;
+}
+
+.box3:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+    color: #ffa500;
+    border-radius: 20px;
+}
+
+.box4 {
+    background-color: #9a32cd;
+}
+
+.box4:hover {
+    background-color: #9a32cd;
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 300px;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.conteudo-feminino {
+    text-align: justify;
+    margin: 15px;
+    padding: 10px 10px;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    position: relative;
+    background-image: url(img/foto-produto/moda_feminina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo-masculino {
+    text-align: justify;
+    margin: 15px;
+    padding: 10px 10px;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    color: #000000;
+    position: relative;
+    background-image: url(img/foto-produto/camisa_masculina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo-infantil {
+    text-align: justify;
+    margin: 15px;
+    padding: 10px 10px;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    position: relative;
+    background-image: url(img/foto-produto/moda_infantil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo-praia {
+    text-align: justify;
+    margin: 15px;
+    padding: 10px 10px;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    color: #000000;
+    position: relative;
+    background-image: url(img/foto-produto/moda_praia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*==============Formulário de Contato=========== */
+
+.contato {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding: 15px 35px;
+    margin-bottom: 50px;
+    color: #9a32cd;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    min-height: 300px;
+    border-radius: 20px;
+}
+
+
+/*====================Input==============*/
+
+.form-group>input,
+select {
+    margin-top: 5px;
+    padding: 2px 3px;
+    border-radius: 2px;
+    height: 25px;
+    width: 100%;
+    border: solida 2px #cccccc;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+}
+
+.form-group>select {
     height: 35px;
 }
 
-/* ==============Botões btn =============== */
-.btn{
-    color:#232323;
+
+/* =========Botões btn============*/
+
+.btn {
     padding: 10px 25px;
     font-size: 1.2em;
-    font-weight: bold;
-    border-radius: 5px;
-}
-.btn:hover{
-    cursor: pointer;
-    filter:brightness(70%);
-    transition:0.5s;
-}
-.btn-danger{
-    background-color: #800000;
-    color:#ffffff;
+    border-radius: 20px;
+    border: none;
 }
 
-/* ==============Layout Produtos================== */
-.produto{
-    height: 120px;
-    width:47%;
-    margin: auto;
-    border:solid 1px #ffa500;
-    padding: 10px;
-    margin-bottom: 10px;
-    color:#800000;
-    display:inline-block;
+.btn:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+    transition: 0.8s;
 }
-.produto-foto{
-    width:25%;
+
+.btn-success {
+    background-color: #00ff00;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #9a32cd;
+    color: #ffffff;
+}
+
+
+/*=======Layout de Produtos==========*/
+
+.produto {
+    position: relative;
+    height: 120px;
+    width: 47%;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffd700;
+    color: #9a32cd;
+    display: inline-block;
+}
+
+.produto-foto {
+    width: 25%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 2px;
     float: left;
     margin-right: 10px;
 }
-.produto-descricao{
+
+.produto-descricao {
     margin-bottom: 2px;
     overflow: hidden;
-    height: 50%;
-    font-size:clamp(1.75em, 1em+3vw,2.5em);
-    font-family: "verdana", Georgia, 'Times New Roman', Times, serif;
-    color:#800000;
+    height: 60%;
+    font-size: clamp(1.75em, 1em+3vw, 2.5em);
+    font-family: "Verdana", Geneva, Tahoma, sans-serif;
+    color: #9a32cd;
 }
-.produto-valor{
-    font-size: 2em;
-    font-weight: bold;
-    color:#800000;
-    display:inline;
-}
-.produto-ajuste-btn-compra{
-    float:right;
-}
-/* ============Medium Queries================= */
 
-/* Extra Small  (XS) Smartphone portrait-retrato */
-@media(min-width: 400px){
-    .contato{
-        width:100%;
-        background-color: #4169e1;
+.produto-valor {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #9a32cd;
+    display: inline;
+}
+
+.produto-ajuste-btn-compra {
+    float: right;
+    border: none;
+}
+
+
+/* =============MEDIA QUERIES============*/
+
+
+/*==Extra small (xs): Smartphone (portrait-retrato)==*/
+
+@media (min-width: 400px) {
+    .contato {
+        width: 100%;
+        background-color: #4169E1;
     }
 }
-.porduto{
 
+.produto {
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.produto-foto {
+    height: 70%;
+    border-radius: 90%
+}
+
+.produto-valor {
+    font-size: 1.7em;
 }
 
 
-/* Small(SM) Smartphone => Landscape-Paisagem */
-@media(min-width)
+/*== Small (sm): Smartphone (landscape-paisagem)==*/
+
+@media (min-width: 576px) {
+    /* Estes valores podem ser encontrado em sites do Bootstrap*/
+    .contato {
+        width: 75%;
+        background-color: #1E90FF;
+    }
+    .corpo {
+        padding: 20px;
+    }
+}
+
+
+/*====Medium (md): Tablet===*/
+
+@media (min-width: 768px) {
+    /* Estes valores podem ser encontrado em sites do Bootstrap*/
+    .contato {
+        width: 75%;
+        background-color: #00BFFF;
+    }
+    .corpo {
+        padding: 35px;
+    }
+}
+
+
+/*=====Largo (lg): Notebook=====*/
+
+@media (min-width: 992px) {
+    /* Estes valores podem ser encontrado em sites do Bootstrap*/
+    .contato {
+        width: 45%;
+        background-color: #87CEFA;
+    }
+    .corpo {
+        padding: 55px;
+    }
+}
+
+
+/*====Extra Large (xl): Computador e Telas de TV====*/
+
+@media (min-width: 992px) {
+    /* Estes valores podem ser encontrado em sites do Bootstrap*/
+    .contato {
+        width: 35%;
+        background-color: #fafafa;
+        /*Cor original da configuração*/
+    }
+    .corpo {
+        padding: 75px;
+        /*Tamanho original da configuração*/
+    }
+}
