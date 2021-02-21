@@ -4,9 +4,13 @@
  
  Primeiro repositório versionado do meu primeiro Site
  
- 
-# Frontend 
- 
- HTML5 |  CSS3 
- 
+Tecnologias utilizadas no projeto
+
+FRONTEND
+
+HTML5
+
+CSS3
+
+
 
